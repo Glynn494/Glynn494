@@ -61,3 +61,42 @@ nav a{
 }
 
 
+header{
+    border-top: rgba(0, 0, 0, 0.1) 4px solid;
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+header nav{
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    padding-left: 2em;
+    padding-right: 2em;
+    
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header ul li{
+    display: inline;
+}
+
+header a{
+    border-top: 4px solid transparent;
+}
+
+header a:hover{
+    border-top: navy 4px solid;
+}
+
+nav a{
+    display: inline;
+}
+
+
+
+
