@@ -8,18 +8,18 @@ html {
 }
     
 .width-wrap{
-max-width: 960px;
-margin-left: auto;
-margin-right: auto;
-padding-left: 2em;
-padding-right: 2em;
-padding-bottom: 2em;
-border-width: 1px;
-border-style: solid;
-border-color: rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 0.3);
-border-top: 0;
-margin-bottom: 3em;
-background-color: rgb(21, 21, 21);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 0.3);
+    border-top: 0;
+    margin-bottom: 3em;
+    background-color: cyan
 }
 
 footer hr{
@@ -37,4 +37,27 @@ footer hr{
 dd::after{
    content: ":";
 }
+
+body{
+    color: royalblue;
+    background-color: navy 
+
+}
+
+h1, h2, h3{
+    color: navy
+}
+
+a{
+    color: royalblue
+}
+
+nav a{
+    color: navy;
+}
+
+::selection{
+    color: navy;
+}
+
 
