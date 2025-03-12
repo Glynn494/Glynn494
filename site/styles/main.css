@@ -87,24 +87,24 @@ header li{
 header a{
     border-top: 4px;
     border-top-style: solid;
-    border-top: transparent;
+    border: transparent;
+    
 }
 
 header a:hover{
     border-top: navy;
     border-top-width: 4px;
     border-top-style: solid;
-    display: inline-block;
 }
 
 
 nav a{
+    display: inline-block;
+    position: relative;
     padding-top: 1em;
     padding-bottom: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
-    display: inline-block;
-    position: relative;
     top: -4px;
     color: navy;
 }
@@ -147,6 +147,7 @@ button[type="submit"]{
     padding-bottom: 1em;
     padding-left: 3em;
     padding-right: 3em;
+    color: navy;
     background-color: royalblue
 
 }
