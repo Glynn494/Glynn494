@@ -1,0 +1,156 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.width-wrap {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-top: 0;
+    margin-bottom: 3em;
+    background-color: cyan
+}
+
+footer hr {
+    border: none;
+    width: 50vh;
+    min-width: 300px;
+    max-width: 890px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-bottom: 3px;
+    border-bottom-style: dotted;
+    border-bottom-color: yellow;
+}
+
+dd::after {
+    content: ":";
+}
+
+body {
+    color: #4169e1;
+    background-color: #000080
+}
+
+h1,
+h2,
+h3 {
+    color: #000080
+}
+
+a {
+    color: #4169e1
+}
+
+header nav a {
+    color: #000080;
+}
+
+::selection {
+    background-color: #000080;
+}
+
+header {
+    border-top: rgba(0, 0, 0, 0.1);
+    border-top: 4px;
+    border-top-style: solid;
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+header nav {
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    margin-left: 2em;
+    margin-right: 2em;
+
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+}
+
+nav a {
+    border-top: rgb(0, 0, 128, 0);
+    border-top-width: 4px;
+    border-top-style: solid;
+    margin-top: -4px;
+    display: inline-block;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+nav a:hover {
+    border-top: rgb(0, 0, 128, 1);
+    border-top-width: 4px;
+    border-top-style: solid;
+    margin-top: -4px;
+}
+
+td,
+th {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+thead,
+tfoot,
+tbody th {
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+td {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+tbody tr:nth-child(even) td {
+    background-color: rgba(0, 0, 0, 0.15);
+
+}
+
+label {
+    display: block;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    display: inline;
+}
+
+button[type="submit"] {
+    border: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    color: #000080;
+    background-color: #4169e1
+}
+
+input:invalid {
+    background-color: #4169e1
+}
