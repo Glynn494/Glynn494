@@ -41,7 +41,11 @@ dd::after {
 
 body {
     color: #4169e1;
-    background-color: #000080
+    background-color: #000080;
+    font-family: "Fauna One", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.3;
 }
 
 h1,
@@ -51,7 +55,8 @@ h3 {
 }
 
 a {
-    color: #4169e1
+    color: #4169e1;
+    text-decoration: none
 }
 
 header nav a {
@@ -98,6 +103,9 @@ nav a {
     padding-bottom: 0.5em;
     margin-left: 1em;
     margin-right: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 nav a:hover {
@@ -105,6 +113,7 @@ nav a:hover {
     border-top-width: 4px;
     border-top-style: solid;
     margin-top: -4px;
+    text-decoration: none;
 }
 
 td,
@@ -153,4 +162,71 @@ button[type="submit"] {
 
 input:invalid {
     background-color: #4169e1
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cinzel", serif;
+    font-style: normal;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+
+fieldset ul {
+    list-style-type: none;
+    padding: 0
+}
+
+h1 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 128, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+div[class="bio"] {
+    column-count: 3;
+    column-gap: 2em;
+}
+
+table {
+    caption-side: bottom;
+    column-span: all;
+    margin-top: 1em;
+    border-collapse: collapse;
+}
+
+img {
+    max-width: 100%;
+}
+
+img[alt="Image of self"] {
+    padding: 2%;
+    background-color: white;
+    box-shadow: 10px 10px 10px;
+}
+
+footer {
+    font-size: 75%;
+    text-align: center;
+}
+
+a[title="Back to top"] {
+    text-shadow: 2px 2px 2px;
+    text-decoration: none;
+}
+
+ol {
+    list-style-type: upper-roman;
 }
