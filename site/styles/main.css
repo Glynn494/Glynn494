@@ -90,7 +90,12 @@ header nav ul {
 }
 
 header li {
-    display: inline;
+    list-style: none;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
 }
 
 nav a {
@@ -230,3 +235,32 @@ a[title="Back to top"] {
 ol {
     list-style-type: upper-roman;
 }
+
+
+div[class="favourites"] label + div{
+    display: none;
+    flex: 100%;
+    
+}
+
+div[class="favourites"] input:checked + label + div {
+    display: block;
+}
+
+div[class="favourites"] input{
+    display: none;
+}
+
+div[class="favourites"]{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div[class="favourites"] label{
+    order: -1;
+}
+
+div[class="favourites"] input:checked + label{
+    border-bottom: solid;
+}
+
