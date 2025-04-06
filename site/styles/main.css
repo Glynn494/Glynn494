@@ -201,7 +201,7 @@ h1 {
 }
 
 div[class="bio"] {
-    column-count: 3;
+    column-width: 13em;
     column-gap: 2em;
 }
 
@@ -237,6 +237,7 @@ a[title="Back to top"] {
 }
 
 a[title="Back to top"]:hover {
+    transition: rotate 200ms;
     rotate: 45deg;
 }
 
@@ -273,7 +274,7 @@ div[class="favourites"] input:checked+label {
 
 div[class="gallery"] {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
@@ -295,6 +296,7 @@ div[class="gallery"] .row-span-2 {
 
 
 div[class="gallery"] a:hover {
+    transition: scale 200ms;
     scale: 1.1;
 }
 
@@ -309,6 +311,126 @@ img[class="paperclip"] {
 }
 
 div[class="bio"] a {
-    display: block;
+    display: inline-block;
     position: relative;
 }
+
+@media screen and (max-width: 799px) {
+    div[class="favourites"]{
+        flex-direction: column;
+    }
+
+    div[class="favourites"] label{
+        order: 0;
+    }
+
+    div[class="favourites"] input:checked+label{
+        width: fit-content;
+    }
+
+}
+
+@media screen and (max-width: 538px) {
+    div[class="bio"] thead, tfoot, th{
+        display: none;
+    }
+
+    div[class="bio"] td{
+        display: block;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    div[class="bio"] table{
+        caption-side: top;
+    }
+
+    div[class="bio"] tr td:first-child{
+        padding-top: 0.3em;
+        font-weight: bold;
+    }
+
+    div[class="bio"] tr td:last-child{
+       padding-bottom: 0.3em;
+       font-style: italic;
+       font-size: 0.8em;
+    }
+
+    div[class="bio"] tr td:last-child::after{
+        content: " hrs/wk";
+     }
+}
+
+@media screen and (max-width: 449px) {
+    [class = col-span-2]{
+        grid-column: 1 span;
+    }    
+}
+
+@media screen and (max-width: 325px) {
+    header[id = "top"] nav ul{
+        flex-direction: column;
+        align-items: center;
+        height: 0;
+        overflow: hidden;
+    }
+
+    header[id = "top"] nav a{
+        padding-top: 0.5em;
+        border-top: none;
+    }
+
+    header[id = "top"] nav a:hover{
+        border-top: none;
+        border-bottom: solid;
+    }
+
+    header[id = "top"] nav input[id = "menu-toggle"]:checked + label[class = "sandwich-icon"] + ul{
+        overflow: visible;
+        transition: height 200ms ;
+        height: 6em;
+    }
+}
+
+input[id="menu-toggle"]{
+    display: none;
+}
+label[class="sandwich-icon"]{
+    display: none;
+}
+
+@media screen and (max-width: 325px) {
+    header nav label[class = "sandwich-icon"]{
+        display: block;
+        width: 40px;
+        height: 25px;
+        border-top: solid 5px #4169e1;
+        cursor: pointer;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    header nav label[class = "sandwich-icon"]::before{
+        top: 5px;
+        content: "";
+        display: block;
+        width: 40px;
+        border-top: solid 5px #4169e1;
+        position: absolute;
+    }
+
+    header nav label[class = "sandwich-icon"]::after{
+        top: 15px;
+        content: "";
+        display: block;
+        width: 40px;
+        border-top: solid 5px #4169e1;
+        position: absolute;
+    }
+}
+
