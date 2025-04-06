@@ -316,26 +316,29 @@ div[class="bio"] a {
 }
 
 @media screen and (max-width: 799px) {
-    div[class="favourites"]{
+    div[class="favourites"] {
         flex-direction: column;
     }
 
-    div[class="favourites"] label{
+    div[class="favourites"] label {
         order: 0;
     }
 
-    div[class="favourites"] input:checked+label{
+    div[class="favourites"] input:checked+label {
         width: fit-content;
     }
 
 }
 
 @media screen and (max-width: 538px) {
-    div[class="bio"] thead, tfoot, th{
+
+    div[class="bio"] thead,
+    tfoot,
+    th {
         display: none;
     }
 
-    div[class="bio"] td{
+    div[class="bio"] td {
         display: block;
         padding-top: 0;
         padding-bottom: 0;
@@ -343,66 +346,77 @@ div[class="bio"] a {
         padding-right: 1rem;
     }
 
-    div[class="bio"] table{
+    div[class="bio"] table {
         caption-side: top;
     }
 
-    div[class="bio"] tr td:first-child{
+    div[class="bio"] tbody tr td:first-child {
         padding-top: 0.3em;
         font-weight: bold;
     }
 
-    div[class="bio"] tr td:last-child{
-       padding-bottom: 0.3em;
-       font-style: italic;
-       font-size: 0.8em;
+    div[class="bio"] td[id="fallfirst"] {
+        padding-top: 0.3em;
+        font-weight: bold;
     }
 
-    div[class="bio"] tr td:last-child::after{
+    div[class="bio"] td[id="winterfirst"] {
+        padding-top: 0.3em;
+        font-weight: bold;
+    }
+
+    div[class="bio"] tr td:last-child {
+        padding-bottom: 0.3em;
+        font-style: italic;
+        font-size: 0.8em;
+    }
+
+    div[class="bio"] tr td:last-child::after {
         content: " hrs/wk";
-     }
+    }
 }
 
 @media screen and (max-width: 449px) {
-    [class = col-span-2]{
+    div[class="gallery"] .col-span-2 {
         grid-column: 1 span;
-    }    
+    }
 }
 
 @media screen and (max-width: 325px) {
-    header[id = "top"] nav ul{
+    header[id="top"] nav ul {
         flex-direction: column;
         align-items: center;
         height: 0;
         overflow: hidden;
     }
 
-    header[id = "top"] nav a{
+    header[id="top"] nav a {
         padding-top: 0.5em;
         border-top: none;
     }
 
-    header[id = "top"] nav a:hover{
+    header[id="top"] nav a:hover {
         border-top: none;
         border-bottom: solid;
     }
 
-    header[id = "top"] nav input[id = "menu-toggle"]:checked + label[class = "sandwich-icon"] + ul{
+    header[id="top"] nav input[id="menu-toggle"]:checked+label[class="sandwich-icon"]+ul {
         overflow: visible;
-        transition: height 200ms ;
+        transition: height 200ms;
         height: 6em;
     }
 }
 
-input[id="menu-toggle"]{
+input[id="menu-toggle"] {
     display: none;
 }
-label[class="sandwich-icon"]{
+
+label[class="sandwich-icon"] {
     display: none;
 }
 
 @media screen and (max-width: 325px) {
-    header nav label[class = "sandwich-icon"]{
+    header nav label[class="sandwich-icon"] {
         display: block;
         width: 40px;
         height: 25px;
@@ -415,7 +429,7 @@ label[class="sandwich-icon"]{
         position: relative;
     }
 
-    header nav label[class = "sandwich-icon"]::before{
+    header nav label[class="sandwich-icon"]::before {
         top: 5px;
         content: "";
         display: block;
@@ -424,7 +438,7 @@ label[class="sandwich-icon"]{
         position: absolute;
     }
 
-    header nav label[class = "sandwich-icon"]::after{
+    header nav label[class="sandwich-icon"]::after {
         top: 15px;
         content: "";
         display: block;
@@ -433,4 +447,3 @@ label[class="sandwich-icon"]{
         position: absolute;
     }
 }
-
